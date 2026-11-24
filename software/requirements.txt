@@ -1,0 +1,11 @@
+numpy
+pyserial
+pyyaml
+opencv-python-headless        # Pi에서는 sudo apt install python3-opencv 로 대체 가능
+# ToF (I2C). 받은 칩에 맞는 것 하나만 있으면 됨
+adafruit-blinka
+adafruit-circuitpython-vl53l0x
+adafruit-circuitpython-vl53l1x
+# 노트북 시뮬레이션 · 테스트용
+matplotlib
+pytest

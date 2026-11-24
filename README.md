@@ -31,6 +31,10 @@
   - 1단계: 차체 밖에 두고 USB-C 5V 5A 어댑터로 전원 공급, 웹캠·라이다·OpenCR은 USB 테더로 연결, 노트북과는 LAN SSH
   - 2단계: 전용 배터리 홀더 팩 → 5V 6A급 강압 컨버터 → USB-C (`config.txt`에 `usb_max_current_enable=1`)
 
+## 자율주행 (Raspberry Pi 5)
+
+`software/` — 넘을 수 있는 턱은 편심 모드로 넘고, 못 넘는 장애물은 우회하는 v0.1. 하드웨어 없이 돌려 보는 시뮬레이션 포함. 자세한 내용은 [software/README.md](software/README.md).
+
 ## 펌웨어
 
 | 경로 | 내용 |
