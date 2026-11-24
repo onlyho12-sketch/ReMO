@@ -210,7 +210,13 @@ class SimBackend:
         import matplotlib.pyplot as plt
         from matplotlib.patches import Rectangle
 
-        plt.rcParams["font.family"] = ["Malgun Gothic", "AppleGothic", "Noto Sans CJK KR", "NanumGothic", "DejaVu Sans"]
+        from matplotlib import font_manager
+
+        installed = {f.name for f in font_manager.fontManager.ttflist}
+        for name in ("Malgun Gothic", "AppleGothic", "Noto Sans CJK KR", "NanumGothic"):
+            if name in installed:  # 설치된 한글 폰트 하나만 지정 (없는 폰트 경고 방지)
+                plt.rcParams["font.family"] = name
+                break
         plt.rcParams["axes.unicode_minus"] = False
         fig, ax = plt.subplots(figsize=(11, 4))
         for b in self.boxes:
