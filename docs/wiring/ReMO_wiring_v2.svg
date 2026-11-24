@@ -1,0 +1,481 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1750 1200" font-family="Pretendard, 'Noto Sans KR', 'Noto Sans CJK KR', 'Malgun Gothic', sans-serif" role="img" aria-label="ReMO 배선도 v2">
+<rect x="0" y="0" width="1750" height="1200" rx="0" fill="#f4f5f7" stroke="none" stroke-width="1" opacity="1"/>
+<text x="30" y="34" font-size="20" fill="#1b2a41" text-anchor="start" font-weight="700" dominant-baseline="central">ReMO 배선도 v2 — 구동부 · 상위 제어 (Raspberry Pi 5)</text>
+<text x="30" y="58" font-size="12" fill="#5b6472" text-anchor="start" font-weight="400" dominant-baseline="central">모터 8축(JGB37 ×4 + XL430 ×4) · Cytron MDD10A ×2 · OpenCR 1.0 · Raspberry Pi 5 + USB 웹캠 + 2D 라이다</text>
+<rect x="20" y="80" width="1210" height="1100" rx="14" fill="none" stroke="#8a94a3" stroke-width="1.4" stroke-dasharray="7 6" opacity="1"/>
+<text x="38" y="100" font-size="13" fill="#5b6472" text-anchor="start" font-weight="600" dominant-baseline="central">로봇 차체 (탑재부)</text>
+<rect x="600" y="345" width="580" height="455" rx="12" fill="#1f252b" stroke="#0f1317" stroke-width="1.5" opacity="1"/>
+<circle cx="622" cy="367" r="11" fill="#c9d0d8" stroke="none" stroke-width="1"/>
+<circle cx="1158" cy="367" r="11" fill="#c9d0d8" stroke="none" stroke-width="1"/>
+<circle cx="622" cy="778" r="11" fill="#c9d0d8" stroke="none" stroke-width="1"/>
+<circle cx="1158" cy="778" r="11" fill="#c9d0d8" stroke="none" stroke-width="1"/>
+<text x="890" y="575" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">OpenCR 1.0</text>
+<text x="890" y="605" font-size="11" fill="#9fb3c8" text-anchor="middle" font-weight="400" dominant-baseline="central">ROBOTIS · IMU 내장 · 100Hz 자세 제어 / 고장 감시</text>
+<rect x="990" y="470" width="120" height="80" rx="4" fill="#0b0d10" stroke="#3a434d" stroke-width="1" opacity="1"/>
+<text x="1050" y="510" font-size="10" fill="#8796a6" text-anchor="middle" font-weight="400" dominant-baseline="central">MCU (STM32F7)</text>
+<rect x="612" y="470" width="34" height="60" rx="3" fill="#e8ecf0" stroke="none" stroke-width="1" opacity="1"/>
+<text x="629" y="545" font-size="10" fill="#cfd8e3" text-anchor="middle" font-weight="400" dominant-baseline="central">SW2</text>
+<rect x="630" y="370" width="240" height="16" rx="2" fill="#0b0d10" stroke="#3a434d" stroke-width="1" opacity="1"/>
+<rect x="872" y="370" width="238" height="16" rx="2" fill="#0b0d10" stroke="#3a434d" stroke-width="1" opacity="1"/>
+<text x="750" y="414" font-size="10" fill="#7fd3ff" text-anchor="middle" font-weight="400" dominant-baseline="central">Arduino 헤더 JP1/JP2</text>
+<text x="990" y="414" font-size="10" fill="#7fd3ff" text-anchor="middle" font-weight="400" dominant-baseline="central">GPIO 헤더 J3</text>
+<text x="990" y="428" font-size="9.5" fill="#8796a6" text-anchor="middle" font-weight="400" dominant-baseline="central">(58–63은 초음파 · 센서 시트)</text>
+<rect x="615" y="752" width="85" height="36" rx="4" fill="#c62828" stroke="none" stroke-width="1" opacity="1"/>
+<text x="657" y="770" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">J14 배터리</text>
+<rect x="760" y="770" width="40" height="20" rx="3" fill="#f2f2f2" stroke="none" stroke-width="1" opacity="1"/>
+<text x="780" y="760" font-size="9.5" fill="#cfd8e3" text-anchor="middle" font-weight="400" dominant-baseline="central">TTL J15</text>
+<rect x="890" y="770" width="40" height="20" rx="3" fill="#f2f2f2" stroke="none" stroke-width="1" opacity="1"/>
+<text x="910" y="760" font-size="9.5" fill="#cfd8e3" text-anchor="middle" font-weight="400" dominant-baseline="central">TTL J16</text>
+<rect x="1020" y="770" width="40" height="20" rx="3" fill="#f2f2f2" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1040" y="760" font-size="9.5" fill="#cfd8e3" text-anchor="middle" font-weight="400" dominant-baseline="central">TTL J17</text>
+<text x="1040" y="794" font-size="9" fill="#222" text-anchor="start" font-weight="400" dominant-baseline="central"></text>
+<rect x="1150" y="545" width="30" height="30" rx="3" fill="#b8c2cc" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1140" y="590" font-size="10" fill="#cfd8e3" text-anchor="end" font-weight="400" dominant-baseline="central">USB</text>
+<rect x="22" y="325" width="20" height="10" rx="2" fill="#9aa3ad" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="40" y="304" width="100" height="52" rx="10" fill="#a9b1ba" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<rect x="138" y="308" width="36" height="44" rx="4" fill="#c7ced5" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<text x="90" y="330" font-size="13" fill="#1f2a36" text-anchor="middle" font-weight="700" dominant-baseline="central">구동 FL</text>
+<rect x="178" y="288" width="22" height="84" rx="3" fill="#ffffff" stroke="#7a838d" stroke-width="1" opacity="1"/>
+<text x="110" y="376" font-size="10.5" fill="#3b4450" text-anchor="middle" font-weight="600" dominant-baseline="central">JGB37 · 노랑 A→D2 · 초록 B→J3 54</text>
+<rect x="22" y="455" width="20" height="10" rx="2" fill="#9aa3ad" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="40" y="434" width="100" height="52" rx="10" fill="#a9b1ba" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<rect x="138" y="438" width="36" height="44" rx="4" fill="#c7ced5" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<text x="90" y="460" font-size="13" fill="#1f2a36" text-anchor="middle" font-weight="700" dominant-baseline="central">구동 FR</text>
+<rect x="178" y="418" width="22" height="84" rx="3" fill="#ffffff" stroke="#7a838d" stroke-width="1" opacity="1"/>
+<text x="110" y="506" font-size="10.5" fill="#3b4450" text-anchor="middle" font-weight="600" dominant-baseline="central">JGB37 · 노랑 A→D4 · 초록 B→J3 55</text>
+<rect x="22" y="645" width="20" height="10" rx="2" fill="#9aa3ad" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="40" y="624" width="100" height="52" rx="10" fill="#a9b1ba" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<rect x="138" y="628" width="36" height="44" rx="4" fill="#c7ced5" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<text x="90" y="650" font-size="13" fill="#1f2a36" text-anchor="middle" font-weight="700" dominant-baseline="central">구동 RL</text>
+<rect x="178" y="608" width="22" height="84" rx="3" fill="#ffffff" stroke="#7a838d" stroke-width="1" opacity="1"/>
+<text x="110" y="696" font-size="10.5" fill="#3b4450" text-anchor="middle" font-weight="600" dominant-baseline="central">JGB37 · 노랑 A→D7 · 초록 B→J3 56</text>
+<rect x="22" y="775" width="20" height="10" rx="2" fill="#9aa3ad" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="40" y="754" width="100" height="52" rx="10" fill="#a9b1ba" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<rect x="138" y="758" width="36" height="44" rx="4" fill="#c7ced5" stroke="#6d7680" stroke-width="1" opacity="1"/>
+<text x="90" y="780" font-size="13" fill="#1f2a36" text-anchor="middle" font-weight="700" dominant-baseline="central">구동 RR</text>
+<rect x="178" y="738" width="22" height="84" rx="3" fill="#ffffff" stroke="#7a838d" stroke-width="1" opacity="1"/>
+<text x="110" y="826" font-size="10.5" fill="#3b4450" text-anchor="middle" font-weight="600" dominant-baseline="central">JGB37 · 노랑 A→D8 · 초록 B→J3 57</text>
+<rect x="300" y="290" width="200" height="220" rx="8" fill="#1f4fa6" stroke="#163a7a" stroke-width="1.2" opacity="1"/>
+<rect x="300" y="304" width="22" height="162" rx="3" fill="#2f8f46" stroke="#1c5e2d" stroke-width="1" opacity="1"/>
+<text x="330" y="320" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M1A</text>
+<text x="330" y="345" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M1B</text>
+<text x="330" y="370" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">B+</text>
+<text x="330" y="395" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">B−</text>
+<text x="330" y="420" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M2A</text>
+<text x="330" y="445" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M2B</text>
+<rect x="484" y="314" width="16" height="152" rx="2" fill="#101317" stroke="none" stroke-width="1" opacity="1"/>
+<text x="478" y="330" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">GND</text>
+<text x="478" y="360" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">PWM2</text>
+<text x="478" y="390" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">DIR2</text>
+<text x="478" y="420" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">PWM1</text>
+<text x="478" y="450" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">DIR1</text>
+<text x="397" y="386" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">MDD10A</text>
+<text x="397" y="412" font-size="20" fill="#ffd54f" text-anchor="middle" font-weight="700" dominant-baseline="central">#1</text>
+<text x="400.0" y="526" font-size="11.5" fill="#163a7a" text-anchor="middle" font-weight="700" dominant-baseline="central">Cytron MDD10A #1 · 앞바퀴 FL/FR</text>
+<text x="400.0" y="543" font-size="10.5" fill="#1f4fa6" text-anchor="middle" font-weight="600" dominant-baseline="central">PWM1→D5 · PWM2→D6 · GND→JP1 GND</text>
+<text x="400.0" y="558" font-size="10.5" fill="#1f4fa6" text-anchor="middle" font-weight="600" dominant-baseline="central">DIR1→J3 50 · DIR2→J3 51</text>
+<rect x="300" y="610" width="200" height="220" rx="8" fill="#1f4fa6" stroke="#163a7a" stroke-width="1.2" opacity="1"/>
+<rect x="300" y="624" width="22" height="162" rx="3" fill="#2f8f46" stroke="#1c5e2d" stroke-width="1" opacity="1"/>
+<text x="330" y="640" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M1A</text>
+<text x="330" y="665" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M1B</text>
+<text x="330" y="690" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">B+</text>
+<text x="330" y="715" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">B−</text>
+<text x="330" y="740" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M2A</text>
+<text x="330" y="765" font-size="10.5" fill="#ffffff" text-anchor="start" font-weight="600" dominant-baseline="central">M2B</text>
+<rect x="484" y="634" width="16" height="152" rx="2" fill="#101317" stroke="none" stroke-width="1" opacity="1"/>
+<text x="478" y="650" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">GND</text>
+<text x="478" y="680" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">PWM2</text>
+<text x="478" y="710" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">DIR2</text>
+<text x="478" y="740" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">PWM1</text>
+<text x="478" y="770" font-size="10" fill="#ffffff" text-anchor="end" font-weight="600" dominant-baseline="central">DIR1</text>
+<text x="397" y="706" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">MDD10A</text>
+<text x="397" y="732" font-size="20" fill="#ffd54f" text-anchor="middle" font-weight="700" dominant-baseline="central">#2</text>
+<text x="400.0" y="846" font-size="11.5" fill="#163a7a" text-anchor="middle" font-weight="700" dominant-baseline="central">Cytron MDD10A #2 · 뒷바퀴 RL/RR</text>
+<text x="400.0" y="863" font-size="10.5" fill="#1f4fa6" text-anchor="middle" font-weight="600" dominant-baseline="central">PWM1→D9 · PWM2→D10 · GND→J3 GND</text>
+<text x="400.0" y="878" font-size="10.5" fill="#1f4fa6" text-anchor="middle" font-weight="600" dominant-baseline="central">DIR1→J3 52 · DIR2→J3 53</text>
+<rect x="40" y="1088" width="180" height="62" rx="8" fill="#37474f" stroke="#263238" stroke-width="1" opacity="1"/>
+<text x="130" y="1108" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">3S LiPo 11.1V</text>
+<text x="130" y="1128" font-size="10.5" fill="#cfd8dc" text-anchor="middle" font-weight="400" dominant-baseline="central">2200mAh · XT60</text>
+<rect x="250" y="1101" width="80" height="36" rx="6" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.2" opacity="1"/>
+<text x="290" y="1119" font-size="11" fill="#e65100" text-anchor="middle" font-weight="700" dominant-baseline="central">퓨즈 10A</text>
+<rect x="360" y="1101" width="92" height="36" rx="6" fill="#eceff1" stroke="#546e7a" stroke-width="1.2" opacity="1"/>
+<text x="406" y="1119" font-size="11" fill="#37474f" text-anchor="middle" font-weight="700" dominant-baseline="central">메인 스위치</text>
+<text x="500" y="1150" font-size="10.5" fill="#5b6472" text-anchor="start" font-weight="400" dominant-baseline="central">구동모터 큰 전류는 드라이버로 직결, 제어 보드를 거치지 않음 (XL430 전원은 OpenCR 경유)</text>
+<rect x="740" y="860" width="100" height="56" rx="6" fill="#263238" stroke="#11181c" stroke-width="1" opacity="1"/>
+<circle cx="790" cy="878" r="10" fill="#455a64" stroke="#90a4ae" stroke-width="1.2"/>
+<text x="790" y="902" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">편심 FL · ID1</text>
+<rect x="860" y="860" width="100" height="56" rx="6" fill="#263238" stroke="#11181c" stroke-width="1" opacity="1"/>
+<circle cx="910" cy="878" r="10" fill="#455a64" stroke="#90a4ae" stroke-width="1.2"/>
+<text x="910" y="902" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">편심 FR · ID2</text>
+<rect x="980" y="860" width="100" height="56" rx="6" fill="#263238" stroke="#11181c" stroke-width="1" opacity="1"/>
+<circle cx="1030" cy="878" r="10" fill="#455a64" stroke="#90a4ae" stroke-width="1.2"/>
+<text x="1030" y="902" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">편심 RL · ID3</text>
+<rect x="1100" y="860" width="100" height="56" rx="6" fill="#263238" stroke="#11181c" stroke-width="1" opacity="1"/>
+<circle cx="1150" cy="878" r="10" fill="#455a64" stroke="#90a4ae" stroke-width="1.2"/>
+<text x="1150" y="902" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="700" dominant-baseline="central">편심 RR · ID4</text>
+<text x="970" y="936" font-size="10.5" fill="#3b4450" text-anchor="middle" font-weight="600" dominant-baseline="central">XL430-W250-T ×4 · TTL 데이지체인 (전원 11.1V는 OpenCR 경유)</text>
+<rect x="560" y="95" width="400" height="92" rx="10" fill="#ffffff" stroke="#c5ccd6" stroke-width="1" opacity="1"/>
+<text x="576" y="114" font-size="12.5" fill="#1b2a41" text-anchor="start" font-weight="700" dominant-baseline="central">v2 변경점</text>
+<text x="576" y="135" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· ESP32-CAM 제거 → USB 웹캠 + 2D 라이다(LDROBOT D500)</text>
+<text x="576" y="153" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· Raspberry Pi 5 추가 — OpenCR과 USB 시리얼로 주행 명령만 주고받음</text>
+<text x="576" y="171" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 초음파 · INA219 · ToF 배선은 센서 시트(기존 그림) 참조</text>
+<rect x="990" y="100" width="120" height="92" rx="8" fill="#ffffff" stroke="#c5ccd6" stroke-width="1" opacity="1"/>
+<rect x="1018" y="112" width="64" height="34" rx="6" fill="#2b2f33" stroke="none" stroke-width="1" opacity="1"/>
+<circle cx="1050" cy="122" r="13" fill="#3c4248" stroke="#6b737b" stroke-width="1"/>
+<rect x="1022" y="152" width="56" height="14" rx="2" fill="#1565c0" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1050" y="159" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">USB 어댑터</text>
+<text x="1050" y="180" font-size="11" fill="#1f2a36" text-anchor="middle" font-weight="700" dominant-baseline="central">D500 라이다</text>
+<rect x="1124" y="112" width="92" height="62" rx="8" fill="#ffffff" stroke="#c5ccd6" stroke-width="1" opacity="1"/>
+<rect x="1140" y="124" width="60" height="18" rx="9" fill="#222" stroke="none" stroke-width="1" opacity="1"/>
+<circle cx="1170" cy="133" r="6" fill="#555" stroke="#999" stroke-width="1"/>
+<text x="1170" y="158" font-size="11" fill="#1f2a36" text-anchor="middle" font-weight="700" dominant-baseline="central">USB 웹캠</text>
+<rect x="1300" y="420" width="260" height="200" rx="10" fill="#2f7d32" stroke="#1b5e20" stroke-width="1.4" opacity="1"/>
+<circle cx="1314" cy="434" r="6" fill="#c8e6c9" stroke="none" stroke-width="1"/>
+<circle cx="1546" cy="434" r="6" fill="#c8e6c9" stroke="none" stroke-width="1"/>
+<circle cx="1314" cy="606" r="6" fill="#c8e6c9" stroke="none" stroke-width="1"/>
+<circle cx="1546" cy="606" r="6" fill="#c8e6c9" stroke="none" stroke-width="1"/>
+<rect x="1395" y="480" width="70" height="62" rx="4" fill="#9e9e9e" stroke="#616161" stroke-width="1" opacity="1"/>
+<text x="1430" y="511" font-size="10" fill="#212121" text-anchor="middle" font-weight="600" dominant-baseline="central">팬 쿨러</text>
+<text x="1320" y="572" font-size="17" fill="#ffffff" text-anchor="start" font-weight="700" dominant-baseline="central">Raspberry Pi 5</text>
+<text x="1320" y="594" font-size="10.5" fill="#c8e6c9" text-anchor="start" font-weight="400" dominant-baseline="central">Ubuntu 24.04 + ROS2 Jazzy · 액티브 쿨러 권장</text>
+<rect x="1560" y="540" width="26" height="34" rx="3" fill="#cfd8dc" stroke="#607d8b" stroke-width="1" opacity="1"/>
+<rect x="1324" y="620" width="24" height="10" rx="2" fill="#cfd8dc" stroke="#607d8b" stroke-width="1" opacity="1"/>
+<text x="1318" y="642" font-size="9.5" fill="#3b4450" text-anchor="end" font-weight="600" dominant-baseline="central">USB-C 전원</text>
+<rect x="1612" y="515" width="118" height="84" rx="8" fill="#eceff1" stroke="#90a4ae" stroke-width="1" opacity="1"/>
+<text x="1671" y="540" font-size="13" fill="#263238" text-anchor="middle" font-weight="700" dominant-baseline="central">노트북</text>
+<text x="1671" y="560" font-size="10.5" fill="#00838f" text-anchor="middle" font-weight="600" dominant-baseline="central">LAN 직결 SSH</text>
+<text x="1671" y="577" font-size="10" fill="#5b6472" text-anchor="middle" font-weight="400" dominant-baseline="central">(Wi-Fi는 나중에)</text>
+<rect x="1262" y="702" width="156" height="58" rx="8" fill="#ffffff" stroke="#424242" stroke-width="1.3" opacity="1"/>
+<text x="1340" y="722" font-size="11.5" fill="#212121" text-anchor="middle" font-weight="700" dominant-baseline="central">1단계 · 콘센트 어댑터</text>
+<text x="1340" y="742" font-size="10.5" fill="#424242" text-anchor="middle" font-weight="400" dominant-baseline="central">USB-C 5V 5A (27W)</text>
+<rect x="1478" y="676" width="252" height="48" rx="8" fill="#ffffff" stroke="#8e24aa" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="1604" y="693" font-size="11" fill="#6a1b9a" text-anchor="middle" font-weight="700" dominant-baseline="central">2단계 · 배터리 홀더 팩 (Pi 전용)</text>
+<text x="1604" y="710" font-size="10" fill="#6a1b9a" text-anchor="middle" font-weight="400" dominant-baseline="central">선배가 보낸 큰 홀더 · 모터 배터리와 분리</text>
+<rect x="1478" y="754" width="252" height="48" rx="8" fill="#ffffff" stroke="#8e24aa" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="1604" y="771" font-size="11" fill="#6a1b9a" text-anchor="middle" font-weight="700" dominant-baseline="central">DC-DC 강압 5V 6A급 (≈30W)</text>
+<text x="1604" y="788" font-size="10" fill="#6a1b9a" text-anchor="middle" font-weight="400" dominant-baseline="central">멀티미터로 5.1V 맞춘 뒤 연결</text>
+<rect x="1462" y="120" width="268" height="238" rx="10" fill="#ffffff" stroke="#c5ccd6" stroke-width="1" opacity="1"/>
+<text x="1478" y="140" font-size="12.5" fill="#1b2a41" text-anchor="start" font-weight="700" dominant-baseline="central">차체 밖 · 테더 구성 (1단계)</text>
+<text x="1478" y="162" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· Pi 5는 콘센트 유선 전원 (선배 권장)</text>
+<text x="1478" y="181" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 웹캠 · 라이다는 차체에 달고 USB로 Pi에</text>
+<text x="1478" y="200" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· Pi ↔ OpenCR도 USB 한 가닥</text>
+<text x="1478" y="219" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 노트북 ↔ Pi는 LAN 선 SSH (Wi-Fi 불안정)</text>
+<text x="1478" y="238" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 케이블 3가닥은 한 묶음 테더로 (USB 3–5m)</text>
+<text x="1478" y="257" font-size="10.5" fill="#b71c1c" text-anchor="start" font-weight="400" dominant-baseline="central"></text>
+<text x="1478" y="276" font-size="10.5" fill="#b71c1c" text-anchor="start" font-weight="400" dominant-baseline="central">전원 부족 시 증상: 카메라 · 라이다가</text>
+<text x="1478" y="295" font-size="10.5" fill="#b71c1c" text-anchor="start" font-weight="400" dominant-baseline="central">끊기거나 인식 안 됨 → 5A 전원 필수.</text>
+<text x="1478" y="314" font-size="10.5" fill="#b71c1c" text-anchor="start" font-weight="400" dominant-baseline="central">5V 3A 어댑터면 Pi 5가 USB 출력을</text>
+<text x="1478" y="333" font-size="10.5" fill="#b71c1c" text-anchor="start" font-weight="400" dominant-baseline="central">600mA로 제한함</text>
+<rect x="1262" y="840" width="468" height="330" rx="10" fill="#ffffff" stroke="#c5ccd6" stroke-width="1" opacity="1"/>
+<text x="1280" y="862" font-size="12.5" fill="#1b2a41" text-anchor="start" font-weight="700" dominant-baseline="central">범례 · 메모</text>
+<line x1="1280" y1="888" x2="1310" y2="888" stroke="#d32f2f" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1320" y="888" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">전원 + (11.1V)</text>
+<line x1="1510" y1="888" x2="1540" y2="888" stroke="#222222" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1550" y="888" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">GND / 전원 −</text>
+<line x1="1280" y1="910" x2="1310" y2="910" stroke="#f57c00" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1320" y="910" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">PWM (속도)</text>
+<line x1="1510" y1="910" x2="1540" y2="910" stroke="#1e88e5" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1550" y="910" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">DIR (방향)</text>
+<line x1="1280" y1="932" x2="1310" y2="932" stroke="#f5b800" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1320" y="932" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">엔코더 A (인터럽트)</text>
+<line x1="1510" y1="932" x2="1540" y2="932" stroke="#2e8b3a" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1550" y="932" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">엔코더 B</text>
+<line x1="1280" y1="954" x2="1310" y2="954" stroke="#455a64" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1320" y="954" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">TTL (다이나믹셀)</text>
+<line x1="1510" y1="954" x2="1540" y2="954" stroke="#7e57c2" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1550" y="954" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">USB</text>
+<line x1="1280" y1="976" x2="1310" y2="976" stroke="#0097a7" stroke-width="3.2" stroke-linecap="round"/>
+<text x="1320" y="976" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">LAN</text>
+<line x1="1510" y1="976" x2="1540" y2="976" stroke="#8e24aa" stroke-width="3.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+<text x="1550" y="976" font-size="11" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">2단계 대안 (점선)</text>
+<text x="1280" y="1008" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 엔코더 파랑(VCC) → 3.3V 레일, 검정(GND) → GND 레일 (센서 시트 브레드보드)</text>
+<text x="1280" y="1030" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 모터 빨강(M+) → MxA, 흰색(M−) → MxB. 방향이 반대면 두 선만 바꿈</text>
+<text x="1280" y="1052" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 모든 GND는 공통: 드라이버 GND ↔ OpenCR GND, Pi는 USB로 공유</text>
+<text x="1280" y="1074" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· Pi 4도 있음 — 쓰려면 SD카드에 Pi 4용 OS 다시 설치 (선배 메모)</text>
+<text x="1280" y="1096" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· 2단계에서 비공식 5V 전원 쓰면 config.txt에 usb_max_current_enable=1</text>
+<text x="1280" y="1118" font-size="10.5" fill="#3b4450" text-anchor="start" font-weight="400" dominant-baseline="central">· IMU는 OpenCR 내장 사용. 받은 외장 IMU · ToF는 예비 / I2C 확장</text>
+<path d="M200 295 L209 295" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 295 L209 295" fill="none" stroke="#d32f2f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 309 L209 309" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 309 L209 309" fill="none" stroke="#e9e9e9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 323 L209 323" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 323 L209 323" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 337 L209 337" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 337 L209 337" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 351 L209 351" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 351 L209 351" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 365 L209 365" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 365 L209 365" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 425 L209 425" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 425 L209 425" fill="none" stroke="#d32f2f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 439 L209 439" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 439 L209 439" fill="none" stroke="#e9e9e9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 453 L209 453" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 453 L209 453" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 467 L209 467" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 467 L209 467" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 481 L209 481" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 481 L209 481" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 495 L209 495" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 495 L209 495" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 615 L209 615" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 615 L209 615" fill="none" stroke="#d32f2f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 629 L209 629" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 629 L209 629" fill="none" stroke="#e9e9e9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 643 L209 643" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 643 L209 643" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 657 L209 657" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 657 L209 657" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 671 L209 671" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 671 L209 671" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 685 L209 685" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 685 L209 685" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 745 L209 745" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 745 L209 745" fill="none" stroke="#d32f2f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 759 L209 759" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 759 L209 759" fill="none" stroke="#e9e9e9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 773 L209 773" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 773 L209 773" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 787 L209 787" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 787 L209 787" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 801 L209 801" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 801 L209 801" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 815 L209 815" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 815 L209 815" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 295 L255.0 295.0 Q262 295 262.0 302.0 L262.0 313.0 Q262 320 269.0 320.0 L306 320" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 295 L255.0 295.0 Q262 295 262.0 302.0 L262.0 313.0 Q262 320 269.0 320.0 L306 320" fill="none" stroke="#d32f2f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 309 L263.0 309.0 Q270 309 270.0 316.0 L270.0 338.0 Q270 345 277.0 345.0 L306 345" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 309 L263.0 309.0 Q270 309 270.0 316.0 L270.0 338.0 Q270 345 277.0 345.0 L306 345" fill="none" stroke="#9e9e9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 425 L259.5 425.0 Q262 425 262.0 422.5 L262.0 422.5 Q262 420 264.5 420.0 L306 420" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 425 L259.5 425.0 Q262 425 262.0 422.5 L262.0 422.5 Q262 420 264.5 420.0 L306 420" fill="none" stroke="#d32f2f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 439 L267.0 439.0 Q270 439 270.0 442.0 L270.0 442.0 Q270 445 273.0 445.0 L306 445" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 439 L267.0 439.0 Q270 439 270.0 442.0 L270.0 442.0 Q270 445 273.0 445.0 L306 445" fill="none" stroke="#9e9e9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 615 L255.0 615.0 Q262 615 262.0 622.0 L262.0 633.0 Q262 640 269.0 640.0 L306 640" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 615 L255.0 615.0 Q262 615 262.0 622.0 L262.0 633.0 Q262 640 269.0 640.0 L306 640" fill="none" stroke="#d32f2f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 629 L263.0 629.0 Q270 629 270.0 636.0 L270.0 658.0 Q270 665 277.0 665.0 L306 665" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 629 L263.0 629.0 Q270 629 270.0 636.0 L270.0 658.0 Q270 665 277.0 665.0 L306 665" fill="none" stroke="#9e9e9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 745 L259.5 745.0 Q262 745 262.0 742.5 L262.0 742.5 Q262 740 264.5 740.0 L306 740" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 745 L259.5 745.0 Q262 745 262.0 742.5 L262.0 742.5 Q262 740 264.5 740.0 L306 740" fill="none" stroke="#d32f2f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 759 L267.0 759.0 Q270 759 270.0 762.0 L270.0 762.0 Q270 765 273.0 765.0 L306 765" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M209 759 L267.0 759.0 Q270 759 270.0 762.0 L270.0 762.0 Q270 765 273.0 765.0 L306 765" fill="none" stroke="#9e9e9e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 815 L209.0 815.0 Q216 815 216.0 808.0 L216.0 213.0 Q216 206 223.0 206.0 L1081.0 206.0 Q1088 206 1088.0 213.0 L1088 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 815 L209.0 815.0 Q216 815 216.0 808.0 L216.0 213.0 Q216 206 223.0 206.0 L1081.0 206.0 Q1088 206 1088.0 213.0 L1088 378" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 685 L214.0 685.0 Q221 685 221.0 678.0 L221.0 221.0 Q221 214 228.0 214.0 L1055.0 214.0 Q1062 214 1062.0 221.0 L1062 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 685 L214.0 685.0 Q221 685 221.0 678.0 L221.0 221.0 Q221 214 228.0 214.0 L1055.0 214.0 Q1062 214 1062.0 221.0 L1062 378" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 495 L219.0 495.0 Q226 495 226.0 488.0 L226.0 229.0 Q226 222 233.0 222.0 L1029.0 222.0 Q1036 222 1036.0 229.0 L1036 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 495 L219.0 495.0 Q226 495 226.0 488.0 L226.0 229.0 Q226 222 233.0 222.0 L1029.0 222.0 Q1036 222 1036.0 229.0 L1036 378" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 365 L224.0 365.0 Q231 365 231.0 358.0 L231.0 237.0 Q231 230 238.0 230.0 L1003.0 230.0 Q1010 230 1010.0 237.0 L1010 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 365 L224.0 365.0 Q231 365 231.0 358.0 L231.0 237.0 Q231 230 238.0 230.0 L1003.0 230.0 Q1010 230 1010.0 237.0 L1010 378" fill="none" stroke="#2e8b3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 801 L229.0 801.0 Q236 801 236.0 794.0 L236.0 245.0 Q236 238 243.0 238.0 L799.0 238.0 Q806 238 806.0 245.0 L806 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 801 L229.0 801.0 Q236 801 236.0 794.0 L236.0 245.0 Q236 238 243.0 238.0 L799.0 238.0 Q806 238 806.0 245.0 L806 378" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 671 L234.0 671.0 Q241 671 241.0 664.0 L241.0 253.0 Q241 246 248.0 246.0 L773.0 246.0 Q780 246 780.0 253.0 L780 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 671 L234.0 671.0 Q241 671 241.0 664.0 L241.0 253.0 Q241 246 248.0 246.0 L773.0 246.0 Q780 246 780.0 253.0 L780 378" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 481 L239.0 481.0 Q246 481 246.0 474.0 L246.0 261.0 Q246 254 253.0 254.0 L695.0 254.0 Q702 254 702.0 261.0 L702 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 481 L239.0 481.0 Q246 481 246.0 474.0 L246.0 261.0 Q246 254 253.0 254.0 L695.0 254.0 Q702 254 702.0 261.0 L702 378" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 351 L244.0 351.0 Q251 351 251.0 344.0 L251.0 269.0 Q251 262 258.0 262.0 L669.0 262.0 Q676 262 676.0 269.0 L676 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M202 351 L244.0 351.0 Q251 351 251.0 344.0 L251.0 269.0 Q251 262 258.0 262.0 L669.0 262.0 Q676 262 676.0 269.0 L676 378" fill="none" stroke="#f5b800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 710 L508.0 710.0 Q515 710 515.0 703.0 L515.0 283.0 Q515 276 522.0 276.0 L977.0 276.0 Q984 276 984.0 283.0 L984 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 710 L508.0 710.0 Q515 710 515.0 703.0 L515.0 283.0 Q515 276 522.0 276.0 L977.0 276.0 Q984 276 984.0 283.0 L984 378" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 770 L513.0 770.0 Q520 770 520.0 763.0 L520.0 289.0 Q520 282 527.0 282.0 L951.0 282.0 Q958 282 958.0 289.0 L958 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 770 L513.0 770.0 Q520 770 520.0 763.0 L520.0 289.0 Q520 282 527.0 282.0 L951.0 282.0 Q958 282 958.0 289.0 L958 378" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 390 L518.0 390.0 Q525 390 525.0 383.0 L525.0 295.0 Q525 288 532.0 288.0 L925.0 288.0 Q932 288 932.0 295.0 L932 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 390 L518.0 390.0 Q525 390 525.0 383.0 L525.0 295.0 Q525 288 532.0 288.0 L925.0 288.0 Q932 288 932.0 295.0 L932 378" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 450 L523.0 450.0 Q530 450 530.0 443.0 L530.0 301.0 Q530 294 537.0 294.0 L899.0 294.0 Q906 294 906.0 301.0 L906 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 450 L523.0 450.0 Q530 450 530.0 443.0 L530.0 301.0 Q530 294 537.0 294.0 L899.0 294.0 Q906 294 906.0 301.0 L906 378" fill="none" stroke="#1e88e5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 650 L528.0 650.0 Q535 650 535.0 643.0 L535.0 307.0 Q535 300 542.0 300.0 L873.0 300.0 Q880 300 880.0 307.0 L880 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 650 L528.0 650.0 Q535 650 535.0 643.0 L535.0 307.0 Q535 300 542.0 300.0 L873.0 300.0 Q880 300 880.0 307.0 L880 378" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 680 L533.0 680.0 Q540 680 540.0 673.0 L540.0 313.0 Q540 306 547.0 306.0 L851.0 306.0 Q858 306 858.0 313.0 L858 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 680 L533.0 680.0 Q540 680 540.0 673.0 L540.0 313.0 Q540 306 547.0 306.0 L851.0 306.0 Q858 306 858.0 313.0 L858 378" fill="none" stroke="#f57c00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 740 L538.0 740.0 Q545 740 545.0 733.0 L545.0 319.0 Q545 312 552.0 312.0 L825.0 312.0 Q832 312 832.0 319.0 L832 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 740 L538.0 740.0 Q545 740 545.0 733.0 L545.0 319.0 Q545 312 552.0 312.0 L825.0 312.0 Q832 312 832.0 319.0 L832 378" fill="none" stroke="#f57c00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 360 L543.0 360.0 Q550 360 550.0 353.0 L550.0 325.0 Q550 318 557.0 318.0 L747.0 318.0 Q754 318 754.0 325.0 L754 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 360 L543.0 360.0 Q550 360 550.0 353.0 L550.0 325.0 Q550 318 557.0 318.0 L747.0 318.0 Q754 318 754.0 325.0 L754 378" fill="none" stroke="#f57c00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 420 L548.0 420.0 Q555 420 555.0 413.0 L555.0 331.0 Q555 324 562.0 324.0 L721.0 324.0 Q728 324 728.0 331.0 L728 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 420 L548.0 420.0 Q555 420 555.0 413.0 L555.0 331.0 Q555 324 562.0 324.0 L721.0 324.0 Q728 324 728.0 331.0 L728 378" fill="none" stroke="#f57c00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 330 L560.0 330.0 Q560 330 560.0 330.0 L560.0 330.0 Q560 330 560.0 330.0 L643.0 330.0 Q650 330 650.0 337.0 L650 378" fill="none" stroke="#f4f5f7" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M492 330 L560.0 330.0 Q560 330 560.0 330.0 L560.0 330.0 Q560 330 560.0 330.0 L643.0 330.0 Q650 330 650.0 337.0 L650 378" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M220 1119 L250 1119" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M220 1119 L250 1119" fill="none" stroke="#d32f2f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330 1119 L360 1119" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330 1119 L360 1119" fill="none" stroke="#d32f2f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M452 1119 L463.0 1119.0 Q470 1119 470.0 1112.0 L470 1044" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M452 1119 L463.0 1119.0 Q470 1119 470.0 1112.0 L470 1044" fill="none" stroke="#d32f2f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285 1044 L640 1044" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285 1044 L640 1044" fill="none" stroke="#d32f2f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70 1088 L70.0 1065.0 Q70 1058 77.0 1058.0 L660 1058" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70 1088 L70.0 1065.0 Q70 1058 77.0 1058.0 L660 1058" fill="none" stroke="#222222" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285 1044 L285.0 377.0 Q285 370 292.0 370.0 L306 370" fill="none" stroke="#f4f5f7" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285 1044 L285.0 377.0 Q285 370 292.0 370.0 L306 370" fill="none" stroke="#d32f2f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285 690 L306 690" fill="none" stroke="#f4f5f7" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M285 690 L306 690" fill="none" stroke="#d32f2f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M278 1058 L278.0 402.0 Q278 395 285.0 395.0 L306 395" fill="none" stroke="#f4f5f7" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M278 1058 L278.0 402.0 Q278 395 285.0 395.0 L306 395" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M278 715 L306 715" fill="none" stroke="#f4f5f7" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M278 715 L306 715" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M640 1044 L640 788" fill="none" stroke="#f4f5f7" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M640 1044 L640 788" fill="none" stroke="#d32f2f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M660 1058 L660 788" fill="none" stroke="#f4f5f7" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M660 1058 L660 788" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M780 790 L780 860" fill="none" stroke="#f4f5f7" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M780 790 L780 860" fill="none" stroke="#455a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M840 888 L860 888" fill="none" stroke="#f4f5f7" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M840 888 L860 888" fill="none" stroke="#455a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M910 790 L910.0 825.0 Q910 832 917.0 832.0 L1023.0 832.0 Q1030 832 1030.0 839.0 L1030 860" fill="none" stroke="#f4f5f7" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M910 790 L910.0 825.0 Q910 832 917.0 832.0 L1023.0 832.0 Q1030 832 1030.0 839.0 L1030 860" fill="none" stroke="#455a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1080 888 L1100 888" fill="none" stroke="#f4f5f7" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1080 888 L1100 888" fill="none" stroke="#455a64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1050 100 L1050.0 65.0 Q1050 58 1057.0 58.0 L1421.0 58.0 Q1428 58 1428.0 65.0 L1428 410" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1050 100 L1050.0 65.0 Q1050 58 1057.0 58.0 L1421.0 58.0 Q1428 58 1428.0 65.0 L1428 410" fill="none" stroke="#7e57c2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1216 143 L1371.0 143.0 Q1378 143 1378.0 150.0 L1378 410" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1216 143 L1371.0 143.0 Q1378 143 1378.0 150.0 L1378 410" fill="none" stroke="#7e57c2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1180 560 L1248.0 560.0 Q1255 560 1255.0 553.0 L1255.0 403.0 Q1255 396 1262.0 396.0 L1321.0 396.0 Q1328 396 1328.0 403.0 L1328 410" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1180 560 L1248.0 560.0 Q1255 560 1255.0 553.0 L1255.0 403.0 Q1255 396 1262.0 396.0 L1321.0 396.0 Q1328 396 1328.0 403.0 L1328 410" fill="none" stroke="#7e57c2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1586 557 L1612 557" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1586 557 L1612 557" fill="none" stroke="#0097a7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1336 702 L1336 630" fill="none" stroke="#f4f5f7" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1336 702 L1336 630" fill="none" stroke="#424242" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1604 724 L1604 754" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1604 724 L1604 754" fill="none" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<path d="M1478 778 L1457.0 778.0 Q1450 778 1450.0 771.0 L1450.0 659.0 Q1450 652 1443.0 652.0 L1359.0 652.0 Q1352 652 1352.0 645.0 L1352 630" fill="none" stroke="#f4f5f7" stroke-width="5.800000000000001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1478 778 L1457.0 778.0 Q1450 778 1450.0 771.0 L1450.0 659.0 Q1450 652 1443.0 652.0 L1359.0 652.0 Q1352 652 1352.0 645.0 L1352 630" fill="none" stroke="#8e24aa" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<rect x="196" y="292" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="306" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="320" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="334" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="348" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="362" width="6" height="6" fill="#d9a520"/>
+<circle cx="209" cy="323" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<circle cx="209" cy="337" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<rect x="196" y="422" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="436" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="450" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="464" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="478" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="492" width="6" height="6" fill="#d9a520"/>
+<circle cx="209" cy="453" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<circle cx="209" cy="467" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<rect x="196" y="612" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="626" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="640" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="654" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="668" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="682" width="6" height="6" fill="#d9a520"/>
+<circle cx="209" cy="643" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<circle cx="209" cy="657" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<rect x="196" y="742" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="756" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="770" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="784" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="798" width="6" height="6" fill="#d9a520"/>
+<rect x="196" y="812" width="6" height="6" fill="#d9a520"/>
+<circle cx="209" cy="773" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<circle cx="209" cy="787" r="2.4" fill="#666" stroke="none" stroke-width="1"/>
+<circle cx="311" cy="320" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="320" x2="315" y2="320" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="345" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="345" x2="315" y2="345" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="370" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="370" x2="315" y2="370" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="395" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="395" x2="315" y2="395" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="420" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="420" x2="315" y2="420" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="445" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="445" x2="315" y2="445" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="640" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="640" x2="315" y2="640" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="665" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="665" x2="315" y2="665" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="690" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="690" x2="315" y2="690" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="715" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="715" x2="315" y2="715" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="740" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="740" x2="315" y2="740" stroke="#555" stroke-width="1.4"/>
+<circle cx="311" cy="765" r="6" fill="#c0c6cc" stroke="#6b737b" stroke-width="1"/>
+<line x1="307" y1="765" x2="315" y2="765" stroke="#555" stroke-width="1.4"/>
+<circle cx="492" cy="710" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="770" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="390" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="450" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="650" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="680" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="740" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="360" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="420" r="3.2" fill="#f5a623"/>
+<circle cx="492" cy="330" r="3.2" fill="#f5a623"/>
+<rect x="646" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="650" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">GND</text>
+<rect x="672" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="676" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">2</text>
+<rect x="698" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="702" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">4</text>
+<rect x="724" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="728" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">5</text>
+<rect x="750" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="754" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">6</text>
+<rect x="776" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="780" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">7</text>
+<rect x="802" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="806" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">8</text>
+<rect x="828" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="832" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">9</text>
+<rect x="854" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="858" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">10</text>
+<rect x="876" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="880" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">GND</text>
+<rect x="902" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="906" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">50</text>
+<rect x="928" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="932" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">51</text>
+<rect x="954" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="958" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">52</text>
+<rect x="980" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="984" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">53</text>
+<rect x="1006" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="1010" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">54</text>
+<rect x="1032" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="1036" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">55</text>
+<rect x="1058" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="1062" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">56</text>
+<rect x="1084" y="374" width="8" height="8" fill="#e0b43a"/>
+<text x="1088" y="395" font-size="9.5" fill="#ffffff" text-anchor="middle" font-weight="600" dominant-baseline="central">57</text>
+<rect x="638" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="664" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="690" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="716" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="742" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="768" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="794" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="820" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="846" y="376" width="4" height="4" fill="#4a535c"/>
+<rect x="1106" y="376" width="4" height="4" fill="#4a535c"/>
+<circle cx="470" cy="1044" r="3.6" fill="#d32f2f" stroke="none" stroke-width="1"/>
+<circle cx="285" cy="1044" r="3.6" fill="#d32f2f" stroke="none" stroke-width="1"/>
+<circle cx="640" cy="1044" r="3.6" fill="#d32f2f" stroke="none" stroke-width="1"/>
+<circle cx="285" cy="690" r="3.6" fill="#d32f2f" stroke="none" stroke-width="1"/>
+<circle cx="278" cy="715" r="3.6" fill="#222222" stroke="none" stroke-width="1"/>
+<circle cx="278" cy="1058" r="3.6" fill="#222222" stroke="none" stroke-width="1"/>
+<circle cx="660" cy="1058" r="3.6" fill="#222222" stroke="none" stroke-width="1"/>
+<circle cx="70" cy="1058" r="3.6" fill="#222222" stroke="none" stroke-width="1"/>
+<rect x="403.92999999999995" y="1012" width="312.1400000000001" height="20" rx="10" fill="#ffffff" stroke="#d32f2f" stroke-width="1.4" opacity="1"/>
+<text x="560" y="1022.5" font-size="11" fill="#d32f2f" text-anchor="middle" font-weight="600" dominant-baseline="central">11.1V 메인 버스 → 드라이버 B+/B− · OpenCR J14</text>
+<rect x="760.77" y="818" width="38.46" height="20" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="1.4" opacity="1"/>
+<text x="780" y="828.5" font-size="11" fill="#455a64" text-anchor="middle" font-weight="600" dominant-baseline="central">J15</text>
+<rect x="950.77" y="822" width="38.46" height="20" rx="10" fill="#ffffff" stroke="#455a64" stroke-width="1.4" opacity="1"/>
+<text x="970" y="832.5" font-size="11" fill="#455a64" text-anchor="middle" font-weight="600" dominant-baseline="central">J16</text>
+<rect x="1310" y="406" width="36" height="26" rx="3" fill="#cfd8dc" stroke="#607d8b" stroke-width="1" opacity="1"/>
+<rect x="1360" y="406" width="36" height="26" rx="3" fill="#cfd8dc" stroke="#607d8b" stroke-width="1" opacity="1"/>
+<rect x="1410" y="406" width="36" height="26" rx="3" fill="#90caf9" stroke="#607d8b" stroke-width="1" opacity="1"/>
+<rect x="1460" y="406" width="36" height="26" rx="3" fill="#90caf9" stroke="#607d8b" stroke-width="1" opacity="1"/>
+<text x="1328" y="446" font-size="9.5" fill="#e8f5e9" text-anchor="middle" font-weight="400" dominant-baseline="central">USB</text>
+<text x="1378" y="446" font-size="9.5" fill="#e8f5e9" text-anchor="middle" font-weight="400" dominant-baseline="central">USB</text>
+<text x="1428" y="446" font-size="9.5" fill="#e8f5e9" text-anchor="middle" font-weight="400" dominant-baseline="central">USB3</text>
+<text x="1478" y="446" font-size="9.5" fill="#e8f5e9" text-anchor="middle" font-weight="400" dominant-baseline="central">(여유)</text>
+<rect x="1215.86" y="470" width="78.28000000000003" height="20" rx="10" fill="#ffffff" stroke="#7e57c2" stroke-width="1.4" opacity="1"/>
+<text x="1255" y="480.5" font-size="11" fill="#7e57c2" text-anchor="middle" font-weight="600" dominant-baseline="central">USB 시리얼</text>
+<rect x="1165.22" y="48" width="149.56000000000003" height="20" rx="10" fill="#ffffff" stroke="#7e57c2" stroke-width="1.4" opacity="1"/>
+<text x="1240" y="58.5" font-size="11" fill="#7e57c2" text-anchor="middle" font-weight="600" dominant-baseline="central">라이다 USB (전원 겸용)</text>
+<rect x="1266.36" y="133" width="67.28" height="20" rx="10" fill="#ffffff" stroke="#7e57c2" stroke-width="1.4" opacity="1"/>
+<text x="1300" y="143.5" font-size="11" fill="#7e57c2" text-anchor="middle" font-weight="600" dominant-baseline="central">웹캠 USB</text>
+</svg>
