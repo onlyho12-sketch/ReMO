@@ -41,9 +41,13 @@ ToF가 잡은 점 근처의 카메라 점은 "넘을 수 없음"으로 승격해
 ```bash
 cd software
 pip install -r requirements.txt
-python3 -m remo_nav --sim course --plot course.png     # tall_box | low_step | mid_box | course
+python3 -m remo_nav --sim course --live                # 시연용 애니메이션 창
+python3 -m remo_nav --sim course --video demo.mp4      # 시연용 동영상 저장
+python3 -m remo_nav --sim course --plot course.png     # 경로 그림 + 진행 기록(개발용)
 python3 -m pytest -q tests
 ```
+
+시나리오: `tall_box` · `low_step` · `mid_box` · `course`. 만들어 둔 시연 영상: `docs/demo_course.mp4`, `docs/demo_mid_box.mp4`
 
 | 시나리오 | 결과 |
 |---|---|

@@ -123,6 +123,8 @@ def main():
     ap.add_argument("--config", default=None, help="설정 파일 (기본: software/config.yaml)")
     ap.add_argument("--sim", metavar="SCENARIO", help="시뮬레이션: tall_box | low_step | mid_box | course")
     ap.add_argument("--plot", help="시뮬레이션 경로 그림 저장 경로 (.png)")
+    ap.add_argument("--live", action="store_true", help="시연용 애니메이션 창 띄우기 (--sim과 함께)")
+    ap.add_argument("--video", help="시연용 애니메이션 동영상 저장 (.mp4 또는 .gif)")
     ap.add_argument("--max-time", type=float, default=None, help="최대 실행 시간 (초)")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
@@ -132,6 +134,11 @@ def main():
     if cfg.log.enabled:
         log_path = Path(cfg.log.dir) / time.strftime("run_%Y%m%d_%H%M%S.csv")
 
+    if args.sim and (args.live or args.video):
+        from .viz import animate
+        sim = animate(cfg, args.sim, live=args.live, video=args.video)
+        print(f"목표 도달={sim.done()} · 충돌={sim.collisions} · 턱 넘기={sim.climbed}")
+        return
     if args.sim:
         from .sim import SimBackend
         backend = SimBackend(cfg, args.sim)
