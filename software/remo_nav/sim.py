@@ -210,7 +210,8 @@ class SimBackend:
         import matplotlib.pyplot as plt
         from matplotlib.patches import Rectangle
 
-        plt.rcParams["font.family"] = ["Noto Sans CJK KR", "NanumGothic", "DejaVu Sans"]
+        plt.rcParams["font.family"] = ["Malgun Gothic", "AppleGothic", "Noto Sans CJK KR", "NanumGothic", "DejaVu Sans"]
+        plt.rcParams["axes.unicode_minus"] = False
         fig, ax = plt.subplots(figsize=(11, 4))
         for b in self.boxes:
             if b.name == "벽":
